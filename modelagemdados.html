@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">        
+    </head>
+    <body>
+        <h1>modelagem de dados</h1>
+        <section>
+            <div class="row">
+                <div class="col s12 m6 l3">
+                    <div class="card-panel z-depth-3">
+                        <h4>Usuarios</h4>
+                        <div class="card-content">
+                            <p class="flow-text">
+                                <strong>nome</strong> => string</br>
+                                <strong>sobrenome</strong> => string</br>
+                                <strong>sexo</strong> => F ou M</br>
+                                <strong>email</strong> => string</br>
+                                <strong>senha</strong> => string
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l3">
+                    <div class="card-panel z-depth-3">
+                        <h4>Posts</h4>
+                        <div class="card-content">
+                            <p class="flow-text">
+                                <strong>Dono do Post</strong> => string</br>
+                                <strong>Descrição</strong> => string</br>
+                                <strong>Imagem</strong> => string</br>
+                                <strong>Data da postagem</strong> => data</br>
+                                <strong>hora da postagem</strong> => horario</br>
+                                <strong>localização</strong> => string</br>
+                                <strong>Numero de curtidas</strong> => inteiro</br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l3">
+                    <div class="card-panel z-depth-3">
+                        <h4>Comentarios</h4>
+                        <div class="card-content">
+                            <p class="flow-text">
+                                <strong>Dono do Comentarios</strong> => string</br>
+                                <strong>Para qual post</strong> => string</br>
+                                <strong>Texto</strong> => string</br>
+                                <strong>Data da comentarios</strong> => data</br>
+                                <strong>hora do comentarios</strong> => horario</br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l3">
+                    <div class="card-panel z-depth-3">
+                        <h4>Curtir</h4>
+                        <div class="card-content">
+                            <p class="flow-text">
+                                <strong>Quem curtiu</strong> => string</br>
+                                <strong>Qual postagem</strong> => string</br>
+                                <strong>Texto</strong> => string</br>
+                                <strong>Data da curtida</strong> => data</br>
+                                <strong>hora da curtida</strong> => horario</br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="row">
+                 <div class="col s12 m6 l3">
+                    <div class="card-panel z-depth-3">
+                        <h4>Mensagens</h4>
+                        <div class="card-content">
+                            <p class="flow-text">
+                                <strong>Mensagem</strong> => string</br>
+                                <strong>Rementente</strong> => string</br>
+                                <strong>Destinatario</strong> => string</br>
+                                <strong>Data da mensagem</strong> => data</br>
+                                <strong>hora da mensagem</strong> => horario</br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+    
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+    </body>
+</html>

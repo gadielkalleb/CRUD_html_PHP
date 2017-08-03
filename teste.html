@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://unpkg.com/vue"></script>
+
+<body>
+
+    <div ng-app="myApp" ng-controller="myCtrl">
+        Name: <input ng-model="numero1"> Name: <input ng-model="numero2">
+        <h1>{{numero1*numero2}}</h1>
+    </div>
+    <!--  -->
+    <div id="app2">
+        DIGITE UM NUMERO:<input v-model="numero3" placeholder="digite aqui" type="number"> 
+        DIGITE UM NUMERO:<input v-model="numero4" placeholder="digite aqui" type="number">
+
+        <p>A MULTIPLICÃO DOS NUMEROS é: {{ numero3 * numero4 }}</p>
+    </div>
+
+
+    <!--  -->
+    <div id="app">
+        <h1>{{message}}</h1>
+    </div>
+    <!--  -->
+
+    <div id="app-6">
+        <p> Escreva seu nome {{ message }}</p>
+        <input v-model="message">
+    </div>
+    <!--  -->
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: 'ola mundo'
+            }
+        })
+
+        var app6 = new Vue({
+            el: '#app-6',
+            data: {
+                message: ''
+            }
+        })
+
+        var app2 = new Vue({
+            el: '#app2',
+            data: {
+                numero3: '',
+                numero4: ''
+            }
+        })
+    </script>
+
+
+
+
+
+    <p>Change the name inside the input field, and the model data will change automatically, and therefore also the header will
+        change its value.</p>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function ($scope) {
+            $scope.numero1 = "";
+            $scope.numero2 = "";
+        });
+    </script>
+
+</body>
+
+</html>

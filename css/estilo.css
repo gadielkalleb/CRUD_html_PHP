@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800i');
+
+
+/*  */
+#quemsou h1{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 100px;
+    position: relative;
+    top: 100px;
+}
+
+#eusou span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 73px;
+    width: 100%;
+}
+
+#eusoumobi span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+}
+
+#sobre strong, #caminhodev strong{
+     color: #ffab40; 
+}
+
+#iconehtml i{
+    color: white;
+}
+
+#iconehtml i:hover {
+    color: #FF4000;
+   
+    transition: box-shadow 0.4s ease-out;
+    transform: scale(1.2) rotate(-5deg);
+    /*zoom de 20% e inclina a imagem para a esquerda*/
+}
+
+#iconecss3 i{
+    color: white;
+}
+
+#iconecss3 i:hover{
+    color: #0080FF;
+   
+    transition: box-shadow 0.7s;
+    transform: scale(1.2) rotate(5deg);
+    /*zoom de 20% e inclina a imagem para a direita*/
+}
+
+#html:hover,#js:hover,#py:hover,
+#css:hover, #boots:hover, #mat:hover,
+#php:hover, #ajs:hover, #njs:hover,
+#ms:hover, #git:hover, #uml:hover,
+#rup:hover, #scrum:hover, #prot:hover,
+#ion:hover, #cor:hover{
+    transform: scale(1.2);
+}
+
+#rodape ul li{
+    display: inline-block;
+}
